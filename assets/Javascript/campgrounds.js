@@ -33,26 +33,38 @@ $("button").on("click", function(){
       }).then(function(response){
         var i; 
         for (i=0; i<response.campgrounds.length; i++) {
+          
+
+          var nameDiv = $("<div></div>", {
+            id: "nmDiv",
+          });
+          $("#campgroundInfo").append(nameDiv, response.campgrounds[i].name);
+
+          var locationDiv = $("<div></div>", {
+            id: "locDiv",         
+          });
+          $(".campgroundLoc").append("<h5>" + (locationDiv, response.campgrounds[i].location) + "</h5>");
           var imageDiv = $("<img />", {
             id: "newImage",
             src: response.campgrounds[i].imgUrl,
             width: 300,
             height: 200
-          })
-          var nameDiv = $("<div></div>", {
-            id: "nmDiv",
-            src: response.campgrounds[i].name
-          })
-          var locationDiv = $("<div></div>", {
-            id: "locDiv",
-            src: response.campgrounds[i].location
-          })
+          });
+          $("#campgroundInfo").append(imageDiv);
+          var urlDiv = $("<div></div>", {
+            id: urlDiv,
+          });
+          $("#campgroundInfo").append("<a href=" + (urlDiv, response.campgrounds[i].url) + ">" + (urlDiv, response.campgrounds[i].url) + "</a>");
+          $("#campgroundInfo").append($("<br><br><br><br>"));
         
-        $("#camgroundInfo").append(imageDiv);
-        $("#camgroundInfo").append(nameDiv);
-        $("#camgroundInfo").append(locationDiv);
-
-    }        
+          
+ 
+        
+        // $("#camgroundInfo").append(nameDiv, response.campgrounds[i].name);
+        // $("#camgroundInfo").append(locationDiv, response.campgrounds[i].location);
+        // $("#campgroundInfo").append(imageDiv);
+    } 
+           
             console.log(response);
       });
     
