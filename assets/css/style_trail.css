@@ -1,0 +1,93 @@
+#jumbotron1 {
+    margin: 100px 100px;
+
+}
+
+#jumbotron2{
+width: 600px;
+/* height: 500px; */
+padding: 0 0;
+margin: 100px 10px 100px 100px;     
+}
+
+#jumbotron3{
+width: 500px;
+/* height: 500px; */
+padding: 0 0;
+margin: 100px 100px 100px 10px;
+}
+
+#weight{
+width: 200px;
+margin-left: 30px;
+}
+
+#height-ft, #height-inches{
+width: 100px;
+margin-left: 20px;
+}
+
+
+
+html {
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px;
+    padding: 0 0;
+    max-width: 100%;
+}
+
+#jumbotron1 img {
+    width: 200px;
+    height: 200px;
+    margin: 5px 5px;
+    text-align: center;
+}
+
+#indexP p {
+    margin: 0 79px;
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px;
+}
+
+.card-body p,
+#displayImg p,
+.card-text p {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.card-body {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.container p {
+    margin: 0 0 0 10px;
+}
+
+#displayImg img{
+    width: 95%;
+    margin-right: 15px;
+}
+
+#displayTemp img{
+    width: 100px;
+    height: 100px;
+  
+}
+
+#displayTemp{
+  /* display: flex; 
+  flex-wrap: wrap;  */
+  text-align: center;
+  margin: 0 auto;
+}

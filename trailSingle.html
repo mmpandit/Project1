@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Utah's National Parks</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style_trail.css">
+</head>
+
+<body>
+    <div class="container" style="display: flex; text-align: center">
+        <div id="jumbotron2" class="jumbotron">
+            <div id="displayName"></div>
+            <div id="displayImg"></div>
+            <div id="displayTrailSummary"></div>
+            <div id="detailTrail" style="margin: 0 5px;">
+                <h6 style="margin: 0 50px;">Trail</h6>
+                <div id="trail"></div>
+                <h6 style="margin: 0 50px;">Elevation</h6>
+                <div id="elevation"></div>
+                <h6 style="margin: 0 50px;">Dogs Allowed</h6>
+                <div id="dogs"></div><br>
+            </div>
+            <div id="displayDetails" style="text-align: start;margin-left: 5px;">
+            <h6>Overview</h6>
+            <div id="overview"></div><br>
+            <h6>Need To Know</h6>
+            <div id="needToKnow"></div><br>
+            <h6>Description</h6>
+            <div id="description"></div><br>
+            </div>
+            <div id="displayLink">Additional Info :</div>
+        </div>
+        <div id="jumbotron3" class="jumbotron">
+            <div class="row">
+                <div class="col-lg-12">
+                    Weather
+                </div>
+            </div>
+            <div class="row">
+                <!-- <div class="col-lg-3"> -->
+                   <div id="displayTemp"></div>
+                <!-- </div> -->
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    Trail Condition
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="displayTrailCondition"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    BMI calculator (Imperial (US) Method)
+                </div>
+            </div>
+            <div class="row" style="margin-left: 10px">
+                <div class="col-lg-12" style="text-align: center; margin: 0 0;">
+                    <!-- <form> -->
+                        <div class="row">
+                            <label for="weight(pounds)">Weight</label>
+                            <input id="weight" type="number">
+                        </div>
+                        <div class="row" style="display: flex">
+                            <label for="height-ft">Height Ft </label>
+                            <input  id="height-ft" type="number">
+                            <label for="height-inches">Height Inches</label>
+                            <input class="l" id="height-inches" type="number">
+                        </div>
+                        <button class="btn btn-primary" id="submit-BMI" type="submit">Submit</button>
+                    <!-- </form> -->
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    BMI Result
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="displayBmi"></div>
+                    <img id="bmiImage" src="./assets/images/bmi.png" alt="bmiImage">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script type="text/javascript" src="assets/javasript/trailSingle.js"></script>
+</body>
+
+</html>
