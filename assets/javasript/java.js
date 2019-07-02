@@ -4,9 +4,14 @@
     const myParam = urlParams.get('key'); 
     console.log(myParam);
 
+    
+   var displayInfoImg=$('<img>');
    
     if(myParam==="zion"){
-    $('#header').append("welcome to "+myParam+" national park");
+      displayInfoImg.attr('src',"./assets/images/zion.jpg");
+    $('#displayImageInfo').append(displayInfoImg);
+
+    $('#header').append("Welcome to "+myParam+" national park");
 
     $('#firstLine').append("Zion National Park is an American national park located in southwestern Utah near the town of Springdale. A prominent feature of the 229-square-mile (590 km2) park is Zion Canyon, which is 15 miles (24 km) long and up to 2,640 ft (800 m) deep. The canyon walls are reddish and tan-colored Navajo Sandstone eroded by the North Fork of the Virgin River. The lowest point in the park is 3,666 ft (1,117 m) at Coalpits Wash and the highest peak is 8,726 ft (2,660 m) at Horse Ranch Mountain. Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert regions, the park has a unique geography and a variety of life zones that allow for unusual plant and animal diversity. Numerous plant species as well as 289 species of birds, 75 mammals (including 19 species of bat), and 32 reptiles inhabit the park's four life zones: desert, riparian, woodland, and coniferous forest. Zion National Park includes mountains, canyons, buttes, mesas, monoliths, rivers, slot canyons, and natural arches");
 
@@ -16,7 +21,11 @@
   
   }
   else if(myParam==='bryce'){
-    $('#header').append("welcome to national park");
+
+    displayInfoImg.attr('src',"./assets/images/bryce.jpg");
+    $('#displayImageInfo').append(displayInfoImg);
+
+    $('#header').append("Welcome to "+myParam+" national park");
 
     $('#firstLine').append("Bryce Canyon National Park (/braɪs/) is an American national park located in southwestern Utah. The major feature of the park is Bryce Canyon, which despite its name, is not a canyon, but a collection of giant natural amphitheaters along the eastern side of the Paunsaugunt Plateau. Bryce is distinctive due to geological structures called hoodoos, formed by frost weathering and stream erosion of the river and lake bed sedimentary rocks. The red, orange, and white colors of the rocks provide spectacular views for park visitors. Bryce Canyon National Park is much smaller, and sits at a much higher elevation than nearby Zion National Park. The rim at Bryce varies from 8,000 to 9,000 feet (2,400 to 2,700 m).");
 
@@ -26,7 +35,11 @@
 
  }
 else if(myParam==='capitolreef'){
-  $('#header').append("welcome to national park");
+
+  displayInfoImg.attr('src',"./assets/images/capitolreef.jpg");
+    $('#displayImageInfo').append(displayInfoImg);
+
+  $('#header').append("Welcome to "+myParam+" national park");
 
   $('#firstLine').append("Capitol Reef National Park is an American national park in south-central Utah. The park is approximately 60 miles (97 km) long on its north–south axis and just 6 miles (9.7 km) wide on average. The park was established in 1971 to preserve 241,904 acres (377.98 sq mi; 97,895.08 ha; 978.95 km2) of desert landscape and is open all year, with May through September being the highest visitation months.Partially in Wayne County, Utah, the area was originally named Wayne Wonderland in the 1920s by local boosters Ephraim P. Pectol and Joseph S. Hickman.[3] Capitol Reef National Park was designated a national monument on August 2, 1937, by President Franklin D. Roosevelt to protect the area's colorful canyons, ridges, buttes, and monoliths; however, it was not until 1950 that the area officially opened to the public.[3] Road access was improved in 1962 with the construction of State Route 24 through the Fremont River Canyon.");
 
@@ -36,7 +49,11 @@ else if(myParam==='capitolreef'){
 
 }
 else if(myParam==='canyonlands'){
-  $('#header').append("welcome to national park");
+
+  displayInfoImg.attr('src',"./assets/images/canyonlands.jpg");
+    $('#displayImageInfo').append(displayInfoImg);
+
+  $('#header').append("Welcome to "+myParam+" national park");
 
   $('#firstLine').append("Canyonlands National Park is an American national park located in southeastern Utah near the town of Moab. The park preserves a colorful landscape eroded into numerous canyons, mesas, and buttes by the Colorado River, the Green River, and their respective tributaries. Legislation creating the park was signed into law by President Lyndon Johnson on September 12, 1964. The park is divided into four districts: the Island in the Sky, the Needles, the Maze, and the combined rivers—the Green and Colorado—which carved two large canyons into the Colorado Plateau. While these areas share a primitive desert atmosphere, each retains its own character.[5] Author Edward Abbey, a frequent visitor, described the Canyonlands as the most weird, wonderful, magical place on earth—there is nothing else like it anywhere.");
 
@@ -46,7 +63,11 @@ else if(myParam==='canyonlands'){
 
 }
 else if(myParam==='arches'){
-  $('#header').append("welcome to national park");
+
+  displayInfoImg.attr('src',"./assets/images/arches.jpg");
+    $('#displayImageInfo').append(displayInfoImg);
+
+  $('#header').append("Welcome to "+myParam+" national park");
 
   $('#firstLine').append("Arches National Park is a national park in eastern Utah, United States. The park is adjacent to the Colorado River, 4 miles (6 km) north of Moab, Utah. More than 2,000 natural sandstone arches are located in the park, including the well-known Delicate Arch, as well as a variety of unique geological resources and formations. The park contains the highest density of natural arches in the world. The park consists of 76,679 acres (119.811 sq mi; 31,031 ha; 310.31 km2) of high desert located on the Colorado Plateau. The highest elevation in the park is 5,653 feet (1,723 m) at Elephant Butte, and the lowest elevation is 4,085 feet (1,245 m) at the visitor center. The park receives an average of less than 10 inches (250 mm) of rain annually. Administered by the National Park Service, the area was originally named a national monument on April 12, 1929, and was redesignated as a national park on November 12, 1971. The park received more than 1.6 million visitors in 2018.");
 
