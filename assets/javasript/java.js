@@ -3,6 +3,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('key'); 
     console.log(myParam);
+
     
    var displayInfoImg=$('<img>');
    
@@ -20,6 +21,7 @@
   
   }
   else if(myParam==='bryce'){
+
     displayInfoImg.attr('src',"./assets/images/bryce.jpg");
     $('#displayImageInfo').append(displayInfoImg);
 
@@ -33,6 +35,7 @@
 
  }
 else if(myParam==='capitolreef'){
+
   displayInfoImg.attr('src',"./assets/images/capitolreef.jpg");
     $('#displayImageInfo').append(displayInfoImg);
 
@@ -46,6 +49,7 @@ else if(myParam==='capitolreef'){
 
 }
 else if(myParam==='canyonlands'){
+
   displayInfoImg.attr('src',"./assets/images/canyonlands.jpg");
     $('#displayImageInfo').append(displayInfoImg);
 
@@ -59,6 +63,7 @@ else if(myParam==='canyonlands'){
 
 }
 else if(myParam==='arches'){
+
   displayInfoImg.attr('src',"./assets/images/arches.jpg");
     $('#displayImageInfo').append(displayInfoImg);
 
