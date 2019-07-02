@@ -91,3 +91,40 @@ html {
   text-align: center;
   margin: 0 auto;
 }
+
+
+ 
+ #jumbotron_header {
+     
+    background-image: url("../images/trail2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* height: 300px; */
+    background-color: black
+ }
+
+ #jumbotron_header_info{
+    padding: 0 0;
+    margin: 0 0;
+ }
+ 
+ 
+ 
+ .display-4 {
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 5%;
+    background-color: #585858;
+    width: 15%;
+    text-align: center;
+ }
+
+ #displayImageInfo{
+    width: 100%;
+ }
+
+ #displayImageInfo img{
+
+    width: 100%;
+    margin: 0 0;
+ }
