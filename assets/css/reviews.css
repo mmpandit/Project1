@@ -8,7 +8,7 @@
 }
 
 .jumbotron {
-    background-image: url("../images/campgroundImage.png");
+    background-image: url("../images/reviewsImage.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 300px;
@@ -41,3 +41,10 @@ h3 {
     margin-left: 5%;
 }
 
+#dataAdd {
+    margin-right: 15%;
+}
+
+#reviewTextarea {
+    width: 200%;
+}

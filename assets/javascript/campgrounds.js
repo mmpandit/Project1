@@ -1,10 +1,15 @@
+let latCurrent=0;
+let lonCurrent=0;
 
+const urlParams = new URLSearchParams(window.location.search);
+const search = urlParams.get('key');
+console.log(search);
 
-$("button").on("click", function(){
-    search=$(this).val();
-    if(search==='zions') {
+console.log(search === 'zion')
+    if(search ==='zion') {
         latCurrent = 37.2982;
         lonCurrent = 113.0263;
+        console.log("hola");
     }else if(search==='bryce'){
         latCurrent = 37.5930;
         lonCurrent = 112.1677;
@@ -17,7 +22,7 @@ $("button").on("click", function(){
     }else if(search==='capitolreef'){
         latCurrent = 38.3670;
         lonCurrent = 111.2615;
-    }  
+    }  console.log(latCurrent, lonCurrent);
 
     // var lat = $(this).val();
     // var latCurrent = lat.toLowerCase().replace(/\s+/g, '');
@@ -33,7 +38,7 @@ $("button").on("click", function(){
       }).then(function(response){
         var i; 
         for (i=0; i<response.campgrounds.length; i++) {
-          
+            
 
           var nameDiv = $("<div></div>", {
             id: "nmDiv",
@@ -52,9 +57,16 @@ $("button").on("click", function(){
           });
           $("#campgroundInfo").append(imageDiv);
           var urlDiv = $("<div></div>", {
-            id: urlDiv,
+            id: "urlDiv",
           });
-          $("#campgroundInfo").append("<a href=" + (urlDiv, response.campgrounds[i].url) + ">" + (urlDiv, response.campgrounds[i].url) + "</a>");
+          if (response.campgrounds[i].isBookable = "true"){
+          $("#campgroundInfo").append("<h6>Book Now</h6>");
+          }else(response.campgrounds[i].isBookable != "true")
+          $("#campgroundInfo").append("<h6>More Info</h6>");
+          
+          
+          $("#campgroundInfo").append("<h6>Number of Sites: " + response.campgrounds[i].numCampsites + "</h6>");
+          $("#campgroundInfo").append("<h6><a href=" + (urlDiv, response.campgrounds[i].url) + ">" + (urlDiv, response.campgrounds[i].url) + "</a></h6>");
           $("#campgroundInfo").append($("<br><br><br><br>"));
         
           
@@ -71,4 +83,4 @@ $("button").on("click", function(){
    
       // -----------------------------------------------------------------------
    //
-    });
+  // })
